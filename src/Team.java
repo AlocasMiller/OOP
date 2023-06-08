@@ -2,15 +2,13 @@ import java.util.ArrayList;
 
 public class Team {
     private String teamName;
-    private int teamID;
     //private PNG logo;
     private String description;
     private ArrayList<Player> players;
     private ArrayList<Match> matches;
 
-    public Team(String teamName, int teamID, String description) {
+    public Team(String teamName, String description) {
         this.teamName = teamName;
-        this.teamID = teamID;
         //this.logo = logo;
         this.description = description;
     }
@@ -18,10 +16,6 @@ public class Team {
 
     public String getTeamName() {
         return teamName;
-    }
-
-    public int getTeamID() {
-        return teamID;
     }
 
 //    public PNG getLogo() {
